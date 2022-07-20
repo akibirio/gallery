@@ -18,7 +18,7 @@ pipeline {
     }
 	stage('Deploy Application') {
       steps { 
-        sh 'echo "here I'll Deploy to Heroku"'
+        sh 'echo "here I will Deploy to Heroku"'
       }
     }
   }
