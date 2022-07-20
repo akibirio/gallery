@@ -16,5 +16,10 @@ pipeline {
         sh 'echo "here we will run tests"'
       }
     }
+	stage('Deploy Application') {
+      steps { 
+        sh 'echo "here I'll Deploy to Heroku"'
+      }
+    }
   }
 }
