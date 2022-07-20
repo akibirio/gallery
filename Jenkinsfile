@@ -1,7 +1,7 @@
 pipeline { 
   agent any
   tools{
-	nodejs 'Node-14'
+	nodejs 'Node-18'
   }
   
   stages { 
@@ -17,7 +17,7 @@ pipeline {
     }
 	stage('Install Dependencies') {
       steps { 
-        sh 'npn install"'
+        sh 'npm install"'
       }
     }
     stage('Tests') {
